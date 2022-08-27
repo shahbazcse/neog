@@ -191,18 +191,7 @@ hr{
 /* blogs */
 
 .showcase-blogs{
-    padding: 2rem;
-    padding-top: 1rem;
-    border-radius: 1rem;
-    text-align: left;
-}
-
-.showcase-blogs h1{
-    margin-bottom: 0.2rem;
-}
-
-.showcase-blogs p{
-    padding-bottom: 0.8rem;
+    padding-bottom: 6rem;
 }
 
 @media (max-width: 900px) {

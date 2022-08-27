@@ -8,73 +8,48 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    margin: 0px auto;
-    max-width: 85%;
-    width: 100%;
+    margin: 0px;
 }
 
 hr{
     margin: 2rem 0rem;    
 }
 
-/* spaces */
-.margin-md{
-    margin: 2rem;
-}
-
-/* container */
-
 .container {
-    padding: 0rem 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .container-center{
-    max-width: 900px;
-    width: 100%;
+    max-width: 600px;
     margin: auto;
 }
-
-
-
-/* links */
 
 .link{
     text-decoration: none;
     padding: 0.5rem 1rem;
-    box-sizing: border-box;
 }
 
 .link-primary{
     background-color: var(--primary-color);
     border-radius: 0.5rem;
     color: white;
-    max-width: 140px;
-    padding: 0.6rem 1.2rem;
-    margin: 1rem auto;
 }
 
 .link-secondary{
     color: var(--primary-color);
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
-    max-width: 140px;
-    margin: 1rem;
-    padding: 0.6rem 1.2rem;
 }
-
-/* lists */
 
 .list-non-bullet{
     list-style: none;
-    padding-inline-start: 0px;
 }
 
 .list-item-inline{
     display: inline;
     padding: 0rem 0.5rem;
 }
-
-/* navigation */
 
 .navigation{
     background-color: var(--primary-color);
@@ -89,36 +64,30 @@ hr{
 
 .navigation .nav-pills{
     text-align: right;
-    margin: 0.6rem 1rem;
 }
 
 .navigation .brand{
     font-weight: bold;
-    font-size: large;
 }
 
 .navigation .link-active{
     font-weight: bold;
 }
 
-/* headers */
-
 .hero{
     padding: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
+    padding-top: 5rem;
 }
 
 .hero .hero-img{
-    max-width: 80%;
-    width: 550px;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
 
 .hero .hero-heading{
     text-align: center;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     color: var(--dark-gray);
 }
 
@@ -126,32 +95,20 @@ hr{
     color: var(--primary-color);
 }
 
-/* sections */
-
 .section{
     padding: 2rem;
-    padding-top: 1rem;
-    border-radius: 1rem;
-    text-align: center;
 }
 
 .section h1{
-    margin-bottom: 0.2rem;
-}
-
-.section p{
-    padding-bottom: 0.8rem;
+    text-align: center;
 }
 
 .ow{
     background-color: var(--off-white);
 }
 
-/* footers */
-
 .footer{
     background-color: var(--primary-color);
-    margin-top: 1.5rem;
     padding: 2rem 1rem;
     text-align: center;
     color: white;
@@ -160,7 +117,6 @@ hr{
 
 .footer .footer-header{
     font-weight: bold;
-    font-size: large;
 }
 
 .footer .link{
@@ -169,58 +125,4 @@ hr{
  
 .footer .ul{
     padding-inline-start: 0px;
-}
-
-/* projects */
-
-.showcase-list{
-    padding: 2rem;
-    border-radius: 1rem;
-    text-align: center;
-    margin: 3rem auto;
-}
-
-.showcase-list h1{
-    margin: 0.5rem;
-}
-
-.showcase-list p{
-    padding-bottom: 1rem;
-}
-
-/* blogs */
-
-.showcase-blogs{
-    padding: 2rem;
-    padding-top: 1rem;
-    border-radius: 1rem;
-    text-align: left;
-}
-
-.showcase-blogs h1{
-    margin-bottom: 0.2rem;
-}
-
-.showcase-blogs p{
-    padding-bottom: 0.8rem;
-}
-
-@media (max-width: 900px) {
-    body {
-        max-width: 95%;
-        width: 100%;
-    }
-
-    .list-item-inline{
-        display: inline;
-        padding: 0rem;
-    }
-
-    .container-center{
-        width: auto;
-    }
-
-    .link-primary{
-        display: block;
-    }
 }
