@@ -1,0 +1,69 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.brand {
+  color: #0284c7;
+  text-shadow: black 1rem;
+  text-shadow: 1px 1px 1px black;
+  margin-bottom: 0rem;
+}
+
+.App img {
+  height: 50px;
+  width: 50px;
+}
+
+.App p {
+  text-shadow: 2px 2px 8px #ff0000;
+}
+
+.App hr {
+  margin: 1rem;
+}
+
+.container {
+  height: 68vh;
+  max-width: 100%;
+  padding: 2rem;
+  margin-top: 1.5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  display: block;
+  border: 3px solid black;
+  background-color: #f3f4f6;
+  border-radius: 2rem;
+}
+
+.mini-container {
+  height: 2.5vh;
+  width: 230px;
+  padding: 2rem;
+  padding-bottom: 2.5rem;
+  padding-top: 1.6rem;
+  margin: 0 auto;
+  margin-top: 2.3rem;
+  display: block;
+  border: 1.5px solid #525252;
+  background-color: white;
+  border-radius: 0.5rem;
+  text-align: left;
+  border: 2px solid #a3a3a3;
+  font-size: larger;
+}
+
+.btn-genre {
+  padding: 0.2rem 0.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.btn-play {
+  margin-left: 10rem;
+  cursor: pointer;
+  background-color: white;
+  border: white;
+  border-radius: 2rem;
+}
