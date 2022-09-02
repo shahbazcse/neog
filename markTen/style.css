@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.root {
+    font-family: Poppins;
+    text-align: center;
+    width: auto;
+}
+
+.brand{
+    color: #34d399;
+    text-shadow: 0.4px 0.4px 1.2px black;
+    text-align: center;
+    padding: 1rem;
+    margin-left: 2.5rem;
+    padding-top: 4rem;
+}
+
+.root p{
+    color: black;
+    font-size: large;
+    max-width: 95%;
+    padding-left: 8rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    text-shadow: 2px 2px 8px #34d399;
+}
+
+.root span{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    margin: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: 2px solid #34d399;
+    font-size: large;
+    text-align: center;
+}
+
+#button-check{
+    font-size: x-large;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #34d399;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+}
+
+.output-msg{
+    width: auto;
+    padding-right: 2rem;
+    text-align: center;
+}
+
+.table-div{
+    margin-left: 10rem;
+    margin: auto;
+    max-width: fit-content;
+    padding-top: 1.5rem;
+}
+
+table{
+    border-collapse: collapse;
+    border: 2px solid #34d399;
+}
+
+td, th{
+    border: 2px solid #34d399;
+    width: 0%;
+    font-size: large;
+    padding: 1rem 2.5rem;
+}
+
+
+
+
+
