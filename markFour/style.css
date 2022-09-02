@@ -34,8 +34,6 @@ hr{
     margin: auto;
 }
 
-
-
 /* links */
 
 .link{
@@ -62,6 +60,10 @@ hr{
     padding: 0.6rem 1.2rem;
 }
 
+.icons{
+    padding: 0rem;
+}
+
 /* lists */
 
 .list-non-bullet{
@@ -79,7 +81,7 @@ hr{
 .navigation{
     background-color: var(--primary-color);
     color: white;
-    padding: 1rem;
+    padding: 2rem;
     border-bottom-left-radius: 1rem;
 }
 
@@ -94,11 +96,12 @@ hr{
 
 .navigation .brand{
     font-weight: bold;
-    font-size: large;
+    font-size: x-large;
 }
 
 .navigation .link-active{
     font-weight: bold;
+    font-size: large;
 }
 
 /* headers */
@@ -169,6 +172,12 @@ hr{
  
 .footer .ul{
     padding-inline-start: 0px;
+}
+
+.footer-brand{
+    padding-top: 0.8rem;
+    margin-bottom: 0rem;
+    color: black;
 }
 
 /* projects */
