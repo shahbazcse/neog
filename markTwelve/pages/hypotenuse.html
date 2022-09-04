@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="Home">
         <nav class="navigation container">
-          <div class="brand">Fun With Triangles 📐</div>
+          <div>
+            <div class="brand">Fun With Triangles 📐</div>
             <ul class="list-non-bullet nav-pills">
               <li class="list-item-inline">
-                <a class="link link-active" href="./isTriangle.html">
+                <a class="link" href="./isTriangle.html">
                   IS TRIANGLE ?
                 </a>
               </li>
@@ -23,7 +24,7 @@
                 </a>
               </li>
               <li class="list-item-inline">
-                <a class="link" href="./hypotenuse.html">
+                <a class="link link-active" href="./hypotenuse.html">
                   HYPOTENUSE OF TRIANGLE
                 </a>
               </li>
@@ -33,21 +34,22 @@
                 </a>
               </li>
             </ul>
+          </div>
         </nav>
         <div class="container-box">
-            <h1>Angles of Triangles</h1>
-            <p>Angle 1</p>
-            <input required type="number" id="input">
-            <p>Angle 2</p>
-            <input required type="number">
-            <p>Angle 3</p>
-            <input required type="number"><br>
-            <button id="btn-check">Check</button>
-            <h2 class="output">Ouput</h2>
+          <h1>Hypotenuse of  a Triangle</h1>
+          <p>Enter base value (a):</p>
+          <input required type="number">
+          <p>Enter height value (b):</p>
+          <input required type="number"><br>
+          <button>Calculate</button>
+          <h2>Hypotenuse Formula:</h2>
+          <p>√(base² + height²)</p>
+          <h2 class="output">Ouput</h2>
         </div>
       </div>
       <footer class="footer">
       </footer>
-    <script src="./scripts/isTriangle.js"></script>
+    <script src="../scripts/hypotenuse.js"></script>
 </body>
 </html>
