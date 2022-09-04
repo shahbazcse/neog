@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Megrim&family=Syncopate&display=swap");
+
+.Home {
+  font-family: sans-serif;
+  margin: 0px;
+  --primary-color: #0891b2;
+  width: 0 auto;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.brand {
+  font-family: Megrim;
+  font-size: 40px;
+  padding: 1rem;
+  padding-bottom: 0rem;
+}
+
+.container-box {
+  text-align: center;
+  font-family: Poppins;
+  margin: 0 auto;
+  margin-top: 4rem;
+  height: 70vh;
+  width: 600px;
+  padding-top: 1rem;
+  border: 3px solid #0891b2;
+  background-color: #f3f4f6;
+  border-radius: 2rem;
+}
+
+/* Quiz */
+
+.quiz{
+  text-align: center;
+  font-family: Poppins;
+  margin: 0 auto;
+  margin-top: 2rem;
+  height: 122vh;
+  width: 820px;
+  padding-top: 1rem;
+  border: 3px solid #0891b2;
+  background-color: #f3f4f6;
+  border-radius: 1rem;
+}
+
+.quiz-output{
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.question-container{
+  font-size: large;
+}
+
+h1{
+  text-align: center;
+  margin: 2rem 0rem;
+}
+
+hr{
+  width: 90%;
+}
+
+p{
+  margin: 1rem;
+  margin-bottom: 1rem;
+  font-size: 20px;
+  text-align: center;
+}
+
+input{
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  border: 2px solid #0891b2;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: larger;
+}
+
+.link {
+  text-decoration: none;
+  padding: 0.9rem;
+  margin-right: 0.5rem;
+  font-family: Syncopate;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid #06b6d4;
+  border-radius: 1.5rem;
+}
+
+.link-active {
+  background-color: #06b6d4;
+  font-size: 20px;
+  padding: 0.9rem 1rem;
+  border-radius: 1.5rem;
+}
+
+.list-non-bullet {
+  list-style: none;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0rem;
+}
+
+.navigation {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+}
+
+.navigation .link {
+  color: white;
+}
+
+.navigation .nav-pills {
+  text-align: right;
+}
+
+.navigation .brand {
+  font-weight: bold;
+}
+
+.navigation .link-active {
+  font-weight: bold;
+}
+
+button{
+  padding: 1rem 1.4rem;
+  border-radius: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+  font-size: x-large;
+  background-color: #0891b2;
+  border: 0px solid;
+  cursor: pointer;
+  color: white;
+}
+
+.output{
+  text-shadow: 2px 2px 8px #0891b2;
+}
+
+.footer{
+  background-color: #0891b2;
+  margin-top: 4rem;
+  padding: 3rem;
+}
