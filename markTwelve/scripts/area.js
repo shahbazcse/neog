@@ -8,8 +8,12 @@ var processValues = () => {
     var b = Number(input[1].value);
     var c = Number(input[2].value);
     if(a && b && c){
-        var result = findArea(a,b,c);
-        output.innerHTML = `Area of Triangle = ${result}`;
+        if(a>0 && b>0 && c>0){
+            var result = findArea(a,b,c);
+            output.innerHTML = `Area of Triangle = ${result.toFixed(2)}`;
+        } else {
+            output.innerHTML = "Please enter positive values"
+        }
     } else {
         output.innerHTML = "Please enter all the fields";
     }

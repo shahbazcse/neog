@@ -6,8 +6,12 @@ var processValues = () => {
     var a = Number(input[0].value);
     var b = Number(input[1].value);
     if(a && b){
-        var result = findHypotenuse(a,b);
-        output.innerHTML = `Hypotenuse = ${result}`;
+        if(a>0 && b>0){
+            var result = findHypotenuse(a,b);
+            output.innerHTML = `Hypotenuse = ${result}`;
+        } else{
+            output.innerHTML = "Please enter positive values";
+        }
     }
     else{
         output.innerHTML = "Please enter both fields";
