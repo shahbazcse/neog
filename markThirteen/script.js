@@ -6,45 +6,50 @@ btnShow.addEventListener("click", () => processValues());
 
 
 var processValues = () => {
-    
-    var DoBInput = DoB.value;
-    
-    if(DoBInput !== ""){
-        var inputDate = DoBInput.split("-");
-        var yyyy = inputDate[0];
-        var mm = inputDate[1];
-        var dd = inputDate[2];
-    }
 
-    var date = {
-        day: Number(dd),
-        month: Number(mm),
-        year: Number(yyyy)
-    };
-
-    var dateString = dateToString(date);
-    var list = checkAllPalindromeFormats(dateString);
-    var isPalindrome = false;
-
-    for(let i=0; i < list.length; i++){
-        if(list[i]){
-            isPalindrome = true;
-            break;
+    if(DoB.value!==""){
+        var DoBInput = DoB.value;
+        
+        if(DoBInput !== ""){
+            var inputDate = DoBInput.split("-");
+            var yyyy = inputDate[0];
+            var mm = inputDate[1];
+            var dd = inputDate[2];
         }
-    }
-
-    if(!isPalindrome){
-        const [ctr1, nextDate] = nextPalindromeDate(date);
-        const [ctr2, prevDate] = prevPalindromeDate(date);
-
-        if(ctr1 > ctr2){
-            output.innerHTML = `The nearest palindrome date is ${prevDate.day}-${prevDate.month}-${prevDate.year}, you missed by ${ctr2} days`;
+    
+        var date = {
+            day: Number(dd),
+            month: Number(mm),
+            year: Number(yyyy)
+        };
+    
+        var dateString = dateToString(date);
+        var list = checkAllPalindromeFormats(dateString);
+        var isPalindrome = false;
+    
+        for(let i=0; i < list.length; i++){
+            if(list[i]){
+                isPalindrome = true;
+                break;
+            }
+        }
+    
+        if(!isPalindrome){
+            const [ctr1, nextDate] = nextPalindromeDate(date);
+            const [ctr2, prevDate] = prevPalindromeDate(date);
+    
+            if(ctr1 > ctr2){
+                output.innerHTML = `The nearest palindrome date is ${prevDate.day}-${prevDate.month}-${prevDate.year}, you missed by ${ctr2} days`;
+            } else {
+                output.innerHTML = `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed by ${ctr1} days`;
+            }
         } else {
-            output.innerHTML = `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed by ${ctr1} days`;
+            output.innerHTML = "Amazing! Your birth date is a palindrome!";
         }
     } else {
-        output.innerHTML = "Amazing! Your birth date is a palindrome!";
+        output.innerHTML = "Please select a date"
     }
+    
 }
 
 var reverseString = (str) => {
