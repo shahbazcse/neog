@@ -9,7 +9,11 @@ var processValues = () => {
     var stocks = Number(input[1].value);
     var sellingPrice = Number(input[2].value);
     if(costPrice && stocks && sellingPrice){
-        calculateProfitAndLoss(costPrice, stocks, sellingPrice);
+        if(costPrice>0 && stocks>0 && sellingPrice>0){
+            calculateProfitAndLoss(costPrice, stocks, sellingPrice);
+        } else {
+            output.innerHTML = "Please enter positive values";
+        }
     } else{
         output.innerHTML = "Please enter all the fields"
     }
