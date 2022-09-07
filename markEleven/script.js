@@ -6,11 +6,15 @@ var output = document.querySelector(".output");
 btnCheck.addEventListener("click",() => processValues());
 
 var processValues = () => {
-    if( (DoB.value) && (luckyNo.value) ){
-        var sumDOB = calculateDateSum();
-        checkLuckyNumber(sumDOB);
+    if((luckyNo.value>0)){
+        if( (DoB.value) && (luckyNo.value) ){
+            var sumDOB = calculateDateSum();
+            checkLuckyNumber(sumDOB);
+        } else {
+            output.innerHTML = "Please enter both the fields";
+        }
     } else {
-        output.innerHTML = "Please enter both the fields";
+        output.innerHTML = "Please enter a positive value"
     }
 }
 var calculateDateSum = () => {
