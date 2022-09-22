@@ -1,6 +1,7 @@
 var btnOutput = document.querySelector("#btn-translate");
 var txtInput = document.querySelector("#txt-input");
 var txtOutput = document.querySelector("#txt-output");
+var errorMsg = document.querySelector(".errorMsg");
 var serverURL = "https://api.funtranslations.com/translate/shakespeare.json";
 
 btnOutput.addEventListener("click", handleClick);
@@ -22,5 +23,9 @@ function getTranslation(text){
 
 function handleError(error){
     console.log("Error!", error);
-    alert("Please try again after sometime");
+    errorWarning();
+}
+
+errorWarning = () => {
+    errorMsg.innerHTML = "Server Error: Please try again after sometime"
 }

@@ -49,7 +49,7 @@ body {
 
 .quiz-output{
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 }
 
 .question-container{
@@ -150,4 +150,8 @@ button{
   background-color: #0891b2;
   margin-top: 4rem;
   padding: 3rem;
+}
+
+.btnSubmit{
+  margin-left: 45%;
 }

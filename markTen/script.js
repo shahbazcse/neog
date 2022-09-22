@@ -20,11 +20,13 @@ var handleClick = () => {
             calculateCash();
         }
         else{
+            clearTable();
             outputMsg.style.display = "block";
             outputMsg.innerHTML = "Do you wanna wash plates?";
         } 
     }
     else{
+        clearTable();
         outputMsg.style.display = "block";
         outputMsg.innerHTML = "Please enter a valid value";
     }
@@ -36,5 +38,11 @@ var calculateCash = () => {
         const noOfNotes = Math.trunc(amountToBeReturned/notes[i]);
         amountToBeReturned = amountToBeReturned%notes[i];
         allNotes[i].innerHTML = noOfNotes;
+    }
+}
+
+var clearTable = () => {
+    for(let i=0; i<notes.length; i++){
+        allNotes[i].innerHTML = "";
     }
 }

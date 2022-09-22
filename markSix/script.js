@@ -1,6 +1,7 @@
 var txtInput = document.querySelector("#txt-input");
 var txtOutput = document.querySelector("#txt-output");
 var btnOutput = document.querySelector("#btn-translate");
+var errorMsg = document.querySelector(".errorMsg");
 var serverURL = "https://api.funtranslations.com/translate/minion.json";
 
 btnOutput.addEventListener("click", handleClick);
@@ -22,9 +23,12 @@ function getTranslation(text){
 
 function errorHandler(error){
     console.log("Error!", error);
-    alert("Please try again after sometime");
+    errorWarning();
 }
 
+errorWarning = () => {
+    errorMsg.innerHTML = "Server Error: Please try again after sometime"
+}
 
 
 // fetch('https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=Hello World')

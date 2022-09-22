@@ -8,7 +8,7 @@ var processValues = () => {
     if(a && b){
         if(a>0 && b>0){
             var result = findHypotenuse(a,b);
-            output.innerHTML = `Hypotenuse = ${result}`;
+            output.innerHTML = `Hypotenuse = ${result.toFixed(2)}`;
         } else{
             output.innerHTML = "Please enter positive values";
         }
